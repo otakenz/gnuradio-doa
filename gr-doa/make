@@ -6,7 +6,7 @@ then
 fi
 
 cd build
-cmake ..
+cmake -DCMAKE_INSTALL_PREFIX=~/gnuradio ../
 make -j8
 sudo make install
 sudo ldconfig
