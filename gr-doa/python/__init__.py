@@ -24,19 +24,13 @@ description here (python/__init__.py).
 '''
 from __future__ import unicode_literals
 
+# import any pure python here
+from .timestamp_ccf import timestamp_ccf
+from .arrow_f import arrow_f
+
 # import swig generated symbols into the doa namespace
 try:
     # this might fail if the module is python-only
     from .doa_swig import *
 except ImportError:
     pass
-
-# import any pure python here
-from timestamp_ccf import timestamp_ccf
-from arrow_f import arrow_f
-
-
-
-
-
-#

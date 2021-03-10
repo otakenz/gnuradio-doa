@@ -47,7 +47,8 @@ list(APPEND doa_sources
     message_sink_f_impl.cc
     add_const_ff_impl.cc
     phase2doa_ff_impl.cc
-    hold_state_ff_impl.cc )
+    hold_state_ff_impl.cc
+)
 
 set(doa_sources "${doa_sources}" PARENT_SCOPE)
 if(NOT doa_sources)
@@ -60,7 +61,7 @@ target_link_libraries(gnuradio-doa gnuradio::gnuradio-runtime gnuradio::gnuradio
 target_include_directories(gnuradio-doa
     PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
     PUBLIC $<INSTALL_INTERFACE:include>
- )
+  )
 set_target_properties(gnuradio-doa PROPERTIES DEFINE_SYMBOL "gnuradio_doa_EXPORTS")
 
 if(APPLE)

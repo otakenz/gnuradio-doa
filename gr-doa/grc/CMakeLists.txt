@@ -17,29 +17,29 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    doa_capon_ccf.yml
-    doa_timestamp_ccf.yml
-    doa_unwrap_ff.yml
-    doa_linearslope_ff.yml
-    doa_mode_ii.yml
-    doa_lin_delay_cc.yml
-    doa_peak_estimator_cif.yml
-    doa_cub_delay_cc.yml
-    doa_cumulative_ff.yml
-    doa_variance_ff.yml
-    doa_zero_pad_cc.yml
-    doa_sample_offset_cci.yml
-    doa_hold_ii.yml
-    doa_hold_ff.yml
-    doa_full_capon_ccf.yml
-    doa_full_capon3_ccf.yml
-    doa_multiply_exp_cc.yml
-    doa_pi2pi_ff.yml
-    doa_arrow_f.yml
-    doa_delay.yml
-    doa_message_sink_i.yml
-    doa_message_sink_f.yml
-    doa_add_const_ff.yml
-    doa_phase2doa_ff.yml
-    doa_hold_state_ff.yml DESTINATION share/gnuradio/grc/blocks
+    doa_capon_ccf.block.yml
+    doa_timestamp_ccf.block.yml
+    doa_unwrap_ff.block.yml
+    doa_linearslope_ff.block.yml
+    doa_mode_ii.block.yml
+    doa_lin_delay_cc.block.yml
+    doa_peak_estimator_cif.block.yml
+    doa_cub_delay_cc.block.yml
+    doa_cumulative_ff.block.yml
+    doa_variance_ff.block.yml
+    doa_zero_pad_cc.block.yml
+    doa_sample_offset_cci.block.yml
+    doa_hold_ii.block.yml
+    doa_hold_ff.block.yml
+    doa_full_capon_ccf.block.yml
+    doa_full_capon3_ccf.block.yml
+    doa_multiply_exp_cc.block.yml
+    doa_pi2pi_ff.block.yml
+    doa_arrow_f.block.yml
+    doa_delay.block.yml
+    doa_message_sink_i.block.yml
+    doa_message_sink_f.block.yml
+    doa_add_const_ff.block.yml
+    doa_phase2doa_ff.block.yml
+    doa_hold_state_ff.block.yml DESTINATION share/gnuradio/grc/blocks
 )

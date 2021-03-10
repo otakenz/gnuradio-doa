@@ -25,9 +25,9 @@
 #include <gnuradio/attributes.h>
 
 #ifdef gnuradio_doa_EXPORTS
-#  define DOA_API __GR_ATTR_EXPORT
+#define DOA_API __GR_ATTR_EXPORT
 #else
-#  define DOA_API __GR_ATTR_IMPORT
+#define DOA_API __GR_ATTR_IMPORT
 #endif
 
 #endif /* INCLUDED_DOA_API_H */
