@@ -22,7 +22,7 @@
 import numpy
 from time import sleep
 from gnuradio import gr
-from PyQt5 import Qt, QtCore, QtWidgets
+from PyQt5 import Qt, QtCore, QtGui,  QtWidgets
 
 class arrow_f(gr.sync_block, QtWidgets.QWidget):
     """
@@ -44,27 +44,27 @@ class arrow_f(gr.sync_block, QtWidgets.QWidget):
         self.setMinimumHeight(100)
 
     def paintEvent(self, e):
-      print("Paint event ran\n")
+        # print("Paint event ran\n")
 
-      # transform object to rotate the image
-      transform = QtWidgets.QTransform(1,0,0,1, self.width()/2, self.height()/2)
-      transform.rotate(self.angle)
+        # transform object to rotate the image
+        transform = QtGui.QTransform(1,0,0,1, self.width()/2, self.height()/2)
+        transform.rotate(self.angle)
 
-      # image is a pixel map object, from file
-      arrow = QtWidgets.QPixmap("simplearrowup.png")
+        # image is a pixel map object, from file
+        arrow = QtGui.QPixmap("simplearrowup.png")
 
-      # painter object to draw the image
-      painter = QtWidgets.QPainter(self)
-      painter.setTransform(transform)
-      painter.drawPixmap(-arrow.width()/2,-arrow.height()/2, arrow)
-#      painter.drawPixmap(100,100,arrow)
+        # painter object to draw the image
+        painter = QtGui.QPainter(self)
+        painter.setTransform(transform)
+        painter.drawPixmap(-arrow.width()/2,-arrow.height()/2, arrow)
+        # painter.drawPixmap(100,100,arrow)
 
     def rotateArrow(self, new_angle):
-      print("Rotate Arrow  ran\n")
-      # rotate our image by the input (radians)
-      self.angle = numpy.rad2deg(new_angle)/2
-      # draw
-      self.update()
+        # print("Rotate Arrow  ran\n")
+        # rotate our image by the input (radians)
+        self.angle = numpy.rad2deg(new_angle)/2
+        # draw
+        self.update()
 
     def work(self, input_items, output_items):
         in0 = input_items[0]

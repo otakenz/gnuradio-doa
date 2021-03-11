@@ -41,5 +41,6 @@ install(FILES
     doa_message_sink_f.block.yml
     doa_add_const_ff.block.yml
     doa_phase2doa_ff.block.yml
-    doa_hold_state_ff.block.yml DESTINATION share/gnuradio/grc/blocks
+    doa_hold_state_ff.block.yml
+    doa_compass.block.yml DESTINATION share/gnuradio/grc/blocks
 )

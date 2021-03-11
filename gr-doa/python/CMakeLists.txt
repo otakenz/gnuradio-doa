@@ -32,7 +32,8 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     timestamp_ccf.py
-    arrow_f.py DESTINATION ${GR_PYTHON_DIR}/doa
+    arrow_f.py
+    compass.py DESTINATION ${GR_PYTHON_DIR}/doa
 )
 
 ########################################################################
@@ -61,3 +62,4 @@ GR_ADD_TEST(qa_full_capon3_ccf ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/
 #GR_ADD_TEST(qa_multiply_exp_cc ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiply_exp_cc.py)
 GR_ADD_TEST(qa_pi2pi_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_pi2pi_ff.py)
 GR_ADD_TEST(qa_phase2doa_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_phase2doa_ff.py)
+GR_ADD_TEST(qa_compass ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_compass.py)

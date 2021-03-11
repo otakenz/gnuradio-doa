@@ -27,6 +27,7 @@ from __future__ import unicode_literals
 # import any pure python here
 from .timestamp_ccf import timestamp_ccf
 from .arrow_f import arrow_f
+from .compass import compass
 
 # import swig generated symbols into the doa namespace
 try:

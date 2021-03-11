@@ -16,12 +16,9 @@ inputs:
 
 templates:
     imports: import doa
+    # make: doa.arrow_f()
     make: |-
-        <%
-            win = 'self._%s_win'%id
-        %>\
-        doa.arrow_f()
-        self._${id}_win = self.${id};
-        ${gui_hint($win)}
+        <% win = 'self.%s'%id %>doa.arrow_f()
+        ${gui_hint() % win}
 
 file_format: 1
