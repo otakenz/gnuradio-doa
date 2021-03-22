@@ -1,0 +1,68 @@
+id: doa_semicircle
+label: QT GUI Semicircle
+category: '[doa]'
+
+templates:
+  imports: import doa
+  make: |-
+      <%
+          win = 'self._%s_win'%id
+      %>\
+      ${win} = doa.GrSemiCircle(${min_size}, ${update_time}, ${setDebug},"${backgroundColor}")
+      ${win}.setColors("${backgroundColor}", "${sectorColor}")
+      ${gui_hint() % win}
+
+parameters:
+-   id: update_time
+    label: Update Period
+    dtype: float
+    default: '0.10'
+-   id: min_size
+    label: Min Size (px)
+    dtype: int
+    default: '250'
+-   id: backgroundColor
+    label: Backround Color
+    dtype: enum
+    default: 'default'
+    options: ['default', 'silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
+    option_labels: ['default', 'silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
+    hide: 'part'
+-   id: sectorColor
+    label: Sector Color
+    dtype: enum
+    default: 'blue'
+    options: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
+    option_labels: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
+    hide: 'part'
+-   id: circleColor
+    label: Circle Color
+    dtype: enum
+    default: 'red'
+    options: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
+    option_labels: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
+    hide: 'part'
+-   id: setDebug
+    label: Print Updates
+    dtype: enum
+    default: 'False'
+    options: ['False', 'True']
+    option_labels: ['No', 'Yes']
+    hide: 'part'
+-   id: gui_hint
+    label: GUI Hint
+    dtype: gui_hint
+    hide: part
+
+inputs:
+-   domain: stream
+    dtype: float
+    optional: true
+
+documentation: |-
+  This block takes angle in egrees as input and display it on a Semicircle.
+
+  Args:
+  update_time: Time-interval between GUI update
+
+file_format: 1
