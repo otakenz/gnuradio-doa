@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1zero__pad__cc__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::zero_pad_cc_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1zero__pad__cc" prot="public" virt="non-virtual">gr::doa::zero_pad_cc</basecompoundref>
+    <includes refid="zero__pad__cc__impl_8h" local="no">zero_pad_cc_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1zero__pad__cc__impl_1a335d143103a5b083208aeefb9fd59c14" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::doa::zero_pad_cc_impl::d_vec_len_in</definition>
+        <argsstring></argsstring>
+        <name>d_vec_len_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" line="33" column="11" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1zero__pad__cc__impl_1a7d7ffb319d7234d2c8cd9479ce98eef4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::doa::zero_pad_cc_impl::d_vec_len_out</definition>
+        <argsstring></argsstring>
+        <name>d_vec_len_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" line="34" column="11" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1zero__pad__cc__impl_1a2bee56267b1188cff23ba2076213ab9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::zero_pad_cc_impl::zero_pad_cc_impl</definition>
+        <argsstring>(int vec_len_in, int vec_len_out)</argsstring>
+        <name>zero_pad_cc_impl</name>
+        <param>
+          <type>int</type>
+          <declname>vec_len_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vec_len_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" line="37" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1zero__pad__cc__impl_1a130328760584b279309e8177089f62fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::zero_pad_cc_impl::~zero_pad_cc_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~zero_pad_cc_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" line="38" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1zero__pad__cc__impl_1a3b0e5d9882f9f511c088e4cee3760511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::zero_pad_cc_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" line="41" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::doa::zero_pad_cc</label>
+        <link refid="classgr_1_1doa_1_1zero__pad__cc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::doa::zero_pad_cc_impl</label>
+        <link refid="classgr_1_1doa_1_1zero__pad__cc__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::doa::zero_pad_cc</label>
+        <link refid="classgr_1_1doa_1_1zero__pad__cc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::doa::zero_pad_cc_impl</label>
+        <link refid="classgr_1_1doa_1_1zero__pad__cc__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/zero_pad_cc_impl.h" bodystart="29" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1zero__pad__cc__impl_1a335d143103a5b083208aeefb9fd59c14" prot="private" virt="non-virtual"><scope>gr::doa::zero_pad_cc_impl</scope><name>d_vec_len_in</name></member>
+      <member refid="classgr_1_1doa_1_1zero__pad__cc__impl_1a7d7ffb319d7234d2c8cd9479ce98eef4" prot="private" virt="non-virtual"><scope>gr::doa::zero_pad_cc_impl</scope><name>d_vec_len_out</name></member>
+      <member refid="classgr_1_1doa_1_1zero__pad__cc_1aa0a43d8bf2a52ad067b5ea82c059be8e" prot="public" virt="non-virtual"><scope>gr::doa::zero_pad_cc_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1zero__pad__cc_1ac784fba3bed99b38574a96bf45cbd2b0" prot="public" virt="non-virtual"><scope>gr::doa::zero_pad_cc_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1zero__pad__cc__impl_1a3b0e5d9882f9f511c088e4cee3760511" prot="public" virt="non-virtual"><scope>gr::doa::zero_pad_cc_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1zero__pad__cc__impl_1a2bee56267b1188cff23ba2076213ab9c" prot="public" virt="non-virtual"><scope>gr::doa::zero_pad_cc_impl</scope><name>zero_pad_cc_impl</name></member>
+      <member refid="classgr_1_1doa_1_1zero__pad__cc__impl_1a130328760584b279309e8177089f62fd" prot="public" virt="non-virtual"><scope>gr::doa::zero_pad_cc_impl</scope><name>~zero_pad_cc_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

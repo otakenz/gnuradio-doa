@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1full__capon3__ccf__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::full_capon3_ccf_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1full__capon3__ccf" prot="public" virt="non-virtual">gr::doa::full_capon3_ccf</basecompoundref>
+    <includes refid="full__capon3__ccf__impl_8h" local="no">full_capon3_ccf_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1afbba11d46f1ed6b67505d5e57922ef8c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::doa::full_capon3_ccf_impl::d_vec_in</definition>
+        <argsstring></argsstring>
+        <name>d_vec_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="33" column="12" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1a0e2714a93874ff85e6d4bc65a50f445b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::doa::full_capon3_ccf_impl::d_vec_out</definition>
+        <argsstring></argsstring>
+        <name>d_vec_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="34" column="12" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1aa73a1b9dba28d6f7be3e671596ec8457" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::full_capon3_ccf_impl::capon</definition>
+        <argsstring>(const gr_complex *in0, const gr_complex *in1, const gr_complex *in2, float *out)</argsstring>
+        <name>capon</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in0</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in1</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in2</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="36" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1aade62704c889c25234398ec04a775c3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::full_capon3_ccf_impl::luDecomp</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;original, std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;lower, std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;upper)</argsstring>
+        <name>luDecomp</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>original</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="37" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1a0380c3ec4a0cc9aa0a19e56923474995" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::full_capon3_ccf_impl::invert_lower</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;original, std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;inverse)</argsstring>
+        <name>invert_lower</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>original</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>inverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="38" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1a611db2e1c7f0b9b4228cfd805ca18c54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::full_capon3_ccf_impl::invert_upper</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;original, std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;inverse)</argsstring>
+        <name>invert_upper</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>original</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>inverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="39" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1ae5d17fa61f2131e9e75b251c8864d883" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::full_capon3_ccf_impl::printMatrix</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; gr_complex &gt; &gt; a)</argsstring>
+        <name>printMatrix</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="40" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1a683bccf8522f448c755100afc07220f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::full_capon3_ccf_impl::full_capon3_ccf_impl</definition>
+        <argsstring>(int vec_in, int vec_out)</argsstring>
+        <name>full_capon3_ccf_impl</name>
+        <param>
+          <type>int</type>
+          <declname>vec_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vec_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="43" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1a3b18a95a8704b39a814821fc717e223b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::full_capon3_ccf_impl::~full_capon3_ccf_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~full_capon3_ccf_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="44" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1full__capon3__ccf__impl_1a29c7d0fa571a4079c34bd3bb4ec0c637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::full_capon3_ccf_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="47" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::doa::full_capon3_ccf</label>
+        <link refid="classgr_1_1doa_1_1full__capon3__ccf"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::doa::full_capon3_ccf_impl</label>
+        <link refid="classgr_1_1doa_1_1full__capon3__ccf__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::doa::full_capon3_ccf</label>
+        <link refid="classgr_1_1doa_1_1full__capon3__ccf"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::doa::full_capon3_ccf_impl</label>
+        <link refid="classgr_1_1doa_1_1full__capon3__ccf__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/full_capon3_ccf_impl.h" bodystart="29" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1aa73a1b9dba28d6f7be3e671596ec8457" prot="private" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>capon</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1afbba11d46f1ed6b67505d5e57922ef8c" prot="private" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>d_vec_in</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1a0e2714a93874ff85e6d4bc65a50f445b" prot="private" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>d_vec_out</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1a683bccf8522f448c755100afc07220f9" prot="public" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>full_capon3_ccf_impl</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1a0380c3ec4a0cc9aa0a19e56923474995" prot="private" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>invert_lower</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1a611db2e1c7f0b9b4228cfd805ca18c54" prot="private" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>invert_upper</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1aade62704c889c25234398ec04a775c3c" prot="private" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>luDecomp</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf_1ab1868e1599ea454cea59759898033004" prot="public" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1ae5d17fa61f2131e9e75b251c8864d883" prot="private" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>printMatrix</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf_1a61dbc3cfedb71d304a4de63f5d8abec4" prot="public" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1a29c7d0fa571a4079c34bd3bb4ec0c637" prot="public" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1full__capon3__ccf__impl_1a3b18a95a8704b39a814821fc717e223b" prot="public" virt="non-virtual"><scope>gr::doa::full_capon3_ccf_impl</scope><name>~full_capon3_ccf_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

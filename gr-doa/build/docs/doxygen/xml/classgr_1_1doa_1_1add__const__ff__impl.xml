@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1add__const__ff__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::add_const_ff_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1add__const__ff" prot="public" virt="non-virtual">gr::doa::add_const_ff</basecompoundref>
+    <includes refid="add__const__ff__impl_8h" local="no">add_const_ff_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1add__const__ff__impl_1a420feff1c8a780fef0480f1158bf5e36" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::add_const_ff_impl::d_k</definition>
+        <argsstring></argsstring>
+        <name>d_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" line="32" column="13" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1add__const__ff__impl_1a2b93c24ef004596d0aeaf3d6c8002080" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::add_const_ff_impl::handle_msg</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle_msg</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" line="33" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1add__const__ff__impl_1adb4f6304df75005e9ad158ff7a8a8db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::add_const_ff_impl::add_const_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>add_const_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" line="36" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1add__const__ff__impl_1a9776ebfde4a575cc9613d590464b8084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::add_const_ff_impl::~add_const_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~add_const_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" line="37" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1add__const__ff__impl_1a083a84d280be763669fab9d63ddbbd65" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::doa::add_const_ff_impl::set_const</definition>
+        <argsstring>(float k)</argsstring>
+        <name>set_const</name>
+        <reimplements refid="classgr_1_1doa_1_1add__const__ff_1a800756c651d0b65cb9b62f7631ebcb1e">set_const</reimplements>
+        <param>
+          <type>float</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" line="39" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1add__const__ff__impl_1aab5dbc1adf908e7bda015991bc90430d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::add_const_ff_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" line="42" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::doa::add_const_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1add__const__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::add_const_ff</label>
+        <link refid="classgr_1_1doa_1_1add__const__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::doa::add_const_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1add__const__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::add_const_ff</label>
+        <link refid="classgr_1_1doa_1_1add__const__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/add_const_ff_impl.h" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1add__const__ff__impl_1adb4f6304df75005e9ad158ff7a8a8db5" prot="public" virt="non-virtual"><scope>gr::doa::add_const_ff_impl</scope><name>add_const_ff_impl</name></member>
+      <member refid="classgr_1_1doa_1_1add__const__ff__impl_1a420feff1c8a780fef0480f1158bf5e36" prot="private" virt="non-virtual"><scope>gr::doa::add_const_ff_impl</scope><name>d_k</name></member>
+      <member refid="classgr_1_1doa_1_1add__const__ff__impl_1a2b93c24ef004596d0aeaf3d6c8002080" prot="private" virt="non-virtual"><scope>gr::doa::add_const_ff_impl</scope><name>handle_msg</name></member>
+      <member refid="classgr_1_1doa_1_1add__const__ff_1a0ca25d2f9ee7bbbd77ebe3c4a86b2926" prot="public" virt="non-virtual"><scope>gr::doa::add_const_ff_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1add__const__ff__impl_1a083a84d280be763669fab9d63ddbbd65" prot="public" virt="virtual"><scope>gr::doa::add_const_ff_impl</scope><name>set_const</name></member>
+      <member refid="classgr_1_1doa_1_1add__const__ff_1ade5e1d7c16319e9bf74bf8398a6bf95d" prot="public" virt="non-virtual"><scope>gr::doa::add_const_ff_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1add__const__ff__impl_1aab5dbc1adf908e7bda015991bc90430d" prot="public" virt="non-virtual"><scope>gr::doa::add_const_ff_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1add__const__ff__impl_1a9776ebfde4a575cc9613d590464b8084" prot="public" virt="non-virtual"><scope>gr::doa::add_const_ff_impl</scope><name>~add_const_ff_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

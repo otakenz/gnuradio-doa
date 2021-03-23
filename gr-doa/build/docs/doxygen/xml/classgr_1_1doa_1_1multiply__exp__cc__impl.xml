@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1multiply__exp__cc__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::multiply_exp_cc_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1multiply__exp__cc" prot="public" virt="non-virtual">gr::doa::multiply_exp_cc</basecompoundref>
+    <includes refid="multiply__exp__cc__impl_8h" local="no">multiply_exp_cc_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1multiply__exp__cc__impl_1a97cbe21ad8bea30666dae40e59e38257" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::multiply_exp_cc_impl::d_arg</definition>
+        <argsstring></argsstring>
+        <name>d_arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" line="32" column="13" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1multiply__exp__cc__impl_1a7259e69a878ee84dcc531027e3a5586c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::multiply_exp_cc_impl::handle_arg</definition>
+        <argsstring>(pmt::pmt_t arg)</argsstring>
+        <name>handle_arg</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" line="33" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1multiply__exp__cc__impl_1a302853cc86bedd33fd570add5720c5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::multiply_exp_cc_impl::multiply_exp_cc_impl</definition>
+        <argsstring>(float arg)</argsstring>
+        <name>multiply_exp_cc_impl</name>
+        <param>
+          <type>float</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" line="36" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1multiply__exp__cc__impl_1afd41ee98b385dee756227db35e7281e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::multiply_exp_cc_impl::~multiply_exp_cc_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~multiply_exp_cc_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" line="37" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1multiply__exp__cc__impl_1a1ce4be8451d22df118969dac8a213c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::doa::multiply_exp_cc_impl::set_arg</definition>
+        <argsstring>(float new_arg)</argsstring>
+        <name>set_arg</name>
+        <reimplements refid="classgr_1_1doa_1_1multiply__exp__cc_1ad55c89231972c7f856ec1e17cbfd0e34">set_arg</reimplements>
+        <param>
+          <type>float</type>
+          <declname>new_arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" line="39" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1multiply__exp__cc__impl_1ad127973891fc08f734a6cb8b1e6b9aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::multiply_exp_cc_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" line="42" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::doa::multiply_exp_cc_impl</label>
+        <link refid="classgr_1_1doa_1_1multiply__exp__cc__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::doa::multiply_exp_cc</label>
+        <link refid="classgr_1_1doa_1_1multiply__exp__cc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::doa::multiply_exp_cc_impl</label>
+        <link refid="classgr_1_1doa_1_1multiply__exp__cc__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::doa::multiply_exp_cc</label>
+        <link refid="classgr_1_1doa_1_1multiply__exp__cc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/multiply_exp_cc_impl.h" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc__impl_1a97cbe21ad8bea30666dae40e59e38257" prot="private" virt="non-virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>d_arg</name></member>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc__impl_1a7259e69a878ee84dcc531027e3a5586c" prot="private" virt="non-virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>handle_arg</name></member>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc_1a0fa4b86be91e2adaabbf5b96d853b4eb" prot="public" virt="non-virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc__impl_1a302853cc86bedd33fd570add5720c5ef" prot="public" virt="non-virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>multiply_exp_cc_impl</name></member>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc__impl_1a1ce4be8451d22df118969dac8a213c66" prot="public" virt="virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>set_arg</name></member>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc_1ab3251d890d4dcd04da3fa46645b8bfaa" prot="public" virt="non-virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc__impl_1ad127973891fc08f734a6cb8b1e6b9aa4" prot="public" virt="non-virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1multiply__exp__cc__impl_1afd41ee98b385dee756227db35e7281e2" prot="public" virt="non-virtual"><scope>gr::doa::multiply_exp_cc_impl</scope><name>~multiply_exp_cc_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

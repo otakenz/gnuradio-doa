@@ -20,6 +20,7 @@
 #
 
 
+import struct
 import numpy
 from gnuradio import gr
 import time
@@ -47,7 +48,7 @@ class LabeledSemiCircle(QFrame):
     def change_angle(self, angle, doa_exist):
         self.sectorControl.change_angle(angle, doa_exist)
 
-    def setColors(self, backgroundColor='default', circleColor='red', sectorColor='blue'):
+    def setColors(self, backgroundColor='default', circleColor='black', sectorColor='blue'):
         self.sectorControl.setColors(backgroundColor, circleColor, sectorColor)
 
 
@@ -69,12 +70,12 @@ class SemiCircle(QWidget):
         self.setSizePolicy(Qt.QSizePolicy.Expanding, Qt.QSizePolicy.Expanding)
 
         self.backgroundColor = backgroundColor
-        self.circleColor = 'red'
+        self.circleColor = 'black'
         self.sectorColor = 'blue'
 
         self.doa_exist = False
 
-    def setColors(self, backgroundColor='default', circleColor='red', sectorColor='blue'):
+    def setColors(self, backgroundColor='default', circleColor='black', sectorColor='blue'):
         self.backgroundColor = backgroundColor
         self.circleColor = circleColor
         self.sectorColor = sectorColor
@@ -85,19 +86,19 @@ class SemiCircle(QWidget):
         painter.begin(self)
         painter.setRenderHint(QPainter.Antialiasing)
 
-        if (self.backgroundColor == 'default'):
-            painter.fillRect(event.rect(), self.palette().brush(QPalette.Window))
-        else:
-            size = self.size()
-            center_x = size.width()/2
-            diameter = size.height()
-            rect = QRect(center_x-diameter/2, 0, diameter, diameter)
-            brush = QBrush(QColor(self.backgroundColor), Qtc.SolidPattern)
+#         if (self.backgroundColor == 'default'):
+#             painter.fillRect(event.rect(), self.palette().brush(QPalette.Window))
+#         else:
+#             size = self.size()
+#             center_x = size.width()/2
+#             diameter = size.height()
+#             rect = QRect(center_x-diameter/2, 0, diameter, diameter)
+#             brush = QBrush(QColor(self.backgroundColor), Qtc.SolidPattern)
 
-            painter.setBrush(brush)
-            painter.setPen(QPen(QColor(self.circleColor), 2))
-            painter.setRenderHint(QPainter.Antialiasing)
-            painter.drawEllipse(center_x-diameter/2+1, 1, diameter-4, diameter-4)
+#             painter.setBrush(brush)
+#             painter.setPen(QPen(QColor(self.circleColor), 2))
+#             painter.setRenderHint(QPainter.Antialiasing)
+#             painter.drawEllipse(center_x-diameter/2+1, 1, diameter-4, diameter-4)
 
         self.drawSector(painter)
         painter.end()
@@ -107,46 +108,39 @@ class SemiCircle(QWidget):
 
         # Set up painter
         painter.translate(self.width()/2, self.height()/2)
-        # scale = min((self.width() - self._margins)/120.0,
-        #         (self.height() - self._margins)/120.0)
-        # print(self.width())
-        # painter.scale(scale, scale)
-        # painter.setPen(QPen(Qtc.NoPen))
-        painter.setPen(QPen(QColor(self.sectorColor)))
+
+        painter.setPen(QPen(QColor(self.circleColor)))
 
         angle = int(round(self._angle))
-        # painter.rotate(angle)
-
-        # sectorBrush = self.palette().brush(QPalette.Base)
-        # sectorColor = QColor(self.sectorColor)
-        # sectorBrush.setColor(sectorColor)
-        painter.setBrush(QBrush(QColor(self.sectorColor), Qtc.SolidPattern))
 
         height = 600
         width = 600
 
-        # if angle <= 90 and angle >= 45:
-        #     painter.drawArc(0-width/2, 0-height/2, width, height, 135 * 16, 45 * 16)
-        # elif angle <= 44 and angle >= 0:
-        #     painter.drawArc(0-width/2, 0-height/2, width, height, 90 * 16, 45 * 16)
-        # elif angle <= -1 and angle >= -45:
-        #     painter.drawArc(0-width/2, 0-height/2, width, height, 45 * 16, 45 * 16)
-        # elif angle <= -46 and angle >= -90:
-            # painter.drawArc(0-width/2, 0-height/2, width, height, 0 * 16, 45 * 16)
-        if angle >= 0 and self.doa_exist:
-            painter.drawArc(0-width/2, 0-height/2, width, height, 90 * 16, 90 * 16)
-            painter.drawLine(0, 0, 0, -height/2)
-            painter.drawLine(0, 0, -width/2, 0)
+        # Draw the outline
+        painter.drawPie(0-width/2, 0-height/2, width, height, 0 * 16, 90 * 16)
+        painter.drawPie(0-width/2, 0-height/2, width, height, 90 * 16, 90 * 16)
+
+        # Draw the antenna
+        painter.drawLine(-width/2, 200, width/2, 200)
+        painter.drawLine(-width/2, 150, -width/2, 200)
+        painter.drawLine(width/2, 150, width/2, 200)
+
+        painter.drawLine(-width/2, 150, -width/2+10, 130)
+        painter.drawLine(-width/2, 150, -width/2-10, 130)
+        painter.drawLine(-width/2-10, 130, -width/2+10, 130)
+
+        painter.drawLine(width/2, 150, width/2+10, 130)
+        painter.drawLine(width/2, 150, width/2-10, 130)
+        painter.drawLine(width/2-10, 130, width/2+10, 130)
+
+        if angle > 0 and self.doa_exist:
+            painter.setBrush(QBrush(QColor(self.sectorColor), Qtc.SolidPattern))
+            painter.drawPie(0-width/2, 0-height/2, width, height, 90 * 16, 90 * 16)
         elif angle < 0 and self.doa_exist:
-            painter.drawArc(0-width/2, 0-height/2, width, height, 0 * 16, 90 * 16)
-            painter.drawLine(0, 0, 0, -height/2)
-            painter.drawLine(0, 0, width/2, 0)
-        else:
-            painter.drawArc(0-width/2, 0-height/2, width, height, 0 * 16, 0 * 16)
-            painter.drawLine(0, 0, 0, 0)
-            painter.drawLine(0, 0, 0, 0)
-        # painter.drawLine(0, 0, 600, 0)
-        # painter.drawLine(0, 0, 0, 600)
+            painter.setBrush(QBrush(QColor(self.sectorColor), Qtc.SolidPattern))
+            painter.drawPie(0-width/2, 0-height/2, width, height, 0 * 16, 90 * 16)
+        # else:
+        #     painter.setBrush(QBrush(QColor(0,0,0), Qtc.SolidPattern))
 
         painter.restore()
 
@@ -159,12 +153,14 @@ class SemiCircle(QWidget):
                 print(("DoA Angle: " + str(angle)))
             # if (angle < 0.0):
             #     angle = 0
-        self.doa_exist = doa_exist
 
-        if self.doa_exist: #check this
+
+        if doa_exist:
             self.doa_exist = True
             self._angle = angle
             self.angleChanged.emit(angle)
+        else:
+            self.doa_exist = False
 
         self.update()
 
@@ -180,16 +176,19 @@ class GrSemiCircle(gr.sync_block, LabeledSemiCircle):
         self.last = time.time()
         self.update_period = update_time
         self.next_angle = 0
-        # self.abs_next_angle = 0
         self.doa_array = []
         self.doa_exist = False
+        self.peak_detected = 0
+        self.doa_value = 0
         self.std = 0
 
-    def setColors(self, backgroundColor='default', circleColor='red', sectorColor='blue'):
+    def setColors(self, backgroundColor='default', circleColor='black', sectorColor='blue'):
         super().setColors(backgroundColor, circleColor, sectorColor)
 
     def work(self, input_items, output_items):
         self.doa_array.append(int(input_items[0][0]))
+        # self.doa_value = int(input_items[0][0])
+        # self.peak_detected = input_items[1][0]
 
         if (len(self.doa_array) >= 20):
             # pack it into an array
@@ -197,16 +196,25 @@ class GrSemiCircle(gr.sync_block, LabeledSemiCircle):
 
             # getting standard deviation of input arrays
             self.std = sqrt(numpy.mean(abs(self.doa_array[-1] - self.next_angle)**2))
-            if (self.std <= 0.1): # make it larger than 0.1?
-                self.doa_exist = True
-            # else: self.doa_exist = False
 
-            self.doa_array = []
+            if (self.std <= 0.1): # make it larger than 0.1?
+                # print(self.doa_array)
+                # print(self.std)
+                # print(input_items[1])
+                self.doa_exist = True
+                self.doa_array = []
+
+            else:
+                self.doa_array.pop(0)
+
             self.std = 0
 
 
         if (time.time() - self.last) > self.update_period:
             self.last = time.time()
+            # print(self.peak_detected)
+            # print(self.doa_value)
+            # print(self.peak_detected)
             super().change_angle(self.next_angle, self.doa_exist)
             self.doa_exist = False
 

@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1hold__state__ff__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::hold_state_ff_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1hold__state__ff" prot="public" virt="non-virtual">gr::doa::hold_state_ff</basecompoundref>
+    <includes refid="hold__state__ff__impl_8h" local="no">hold_state_ff_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1hold__state__ff__impl_1adb3c01da9bdbe571e52381104f846af3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::hold_state_ff_impl::d_value</definition>
+        <argsstring></argsstring>
+        <name>d_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="32" column="13" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1hold__state__ff__impl_1a527dff4663ff59837bc772d2d00d5145" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::hold_state_ff_impl::d_scale0</definition>
+        <argsstring></argsstring>
+        <name>d_scale0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="33" column="13" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1hold__state__ff__impl_1acf486ab29f2aec039911424c9871a367" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::hold_state_ff_impl::d_scale1</definition>
+        <argsstring></argsstring>
+        <name>d_scale1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="34" column="13" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1hold__state__ff__impl_1af5ecc828486918a23672bb38a5dc16b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::doa::hold_state_ff_impl::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="35" column="11" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__state__ff__impl_1a22571018bff1e3a69d49595f5fac1b7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::hold_state_ff_impl::handle_state</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle_state</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="37" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__state__ff__impl_1ac16c247c764a8bfca673c5821ef978fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::hold_state_ff_impl::hold_state_ff_impl</definition>
+        <argsstring>(int state, float scale0, float scale1)</argsstring>
+        <name>hold_state_ff_impl</name>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="40" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__state__ff__impl_1ad458f50c3606c38fd25fe66adaf42181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::hold_state_ff_impl::~hold_state_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~hold_state_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="41" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__state__ff__impl_1ad3d822be444dd30702f370617c01acf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::doa::hold_state_ff_impl::set_state</definition>
+        <argsstring>(int new_state)</argsstring>
+        <name>set_state</name>
+        <reimplements refid="classgr_1_1doa_1_1hold__state__ff_1af6add83828c31483cad313b4d56de2b4">set_state</reimplements>
+        <param>
+          <type>int</type>
+          <declname>new_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="43" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__state__ff__impl_1a644c55e7cfc6523765b8a65dcd7ce228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::hold_state_ff_impl::get_state</definition>
+        <argsstring>()</argsstring>
+        <name>get_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="44" column="11" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__state__ff__impl_1af9d39c46bdbe64859b11ad2b5fe315fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::hold_state_ff_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="47" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::doa::hold_state_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1hold__state__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::doa::hold_state_ff</label>
+        <link refid="classgr_1_1doa_1_1hold__state__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::doa::hold_state_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1hold__state__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::doa::hold_state_ff</label>
+        <link refid="classgr_1_1doa_1_1hold__state__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/hold_state_ff_impl.h" bodystart="29" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1a527dff4663ff59837bc772d2d00d5145" prot="private" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>d_scale0</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1acf486ab29f2aec039911424c9871a367" prot="private" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>d_scale1</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1af5ecc828486918a23672bb38a5dc16b3" prot="private" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>d_state</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1adb3c01da9bdbe571e52381104f846af3" prot="private" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>d_value</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1a644c55e7cfc6523765b8a65dcd7ce228" prot="public" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>get_state</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1a22571018bff1e3a69d49595f5fac1b7b" prot="private" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>handle_state</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1ac16c247c764a8bfca673c5821ef978fe" prot="public" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>hold_state_ff_impl</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff_1a8fa143ac0f76313d2f65dbb4fd065271" prot="public" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1ad3d822be444dd30702f370617c01acf1" prot="public" virt="virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>set_state</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff_1a934f154d2d3be7b62995b2bc735e727f" prot="public" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1af9d39c46bdbe64859b11ad2b5fe315fe" prot="public" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1hold__state__ff__impl_1ad458f50c3606c38fd25fe66adaf42181" prot="public" virt="non-virtual"><scope>gr::doa::hold_state_ff_impl</scope><name>~hold_state_ff_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

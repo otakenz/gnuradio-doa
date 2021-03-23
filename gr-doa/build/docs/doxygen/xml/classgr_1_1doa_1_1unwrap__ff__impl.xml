@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1unwrap__ff__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::unwrap_ff_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1unwrap__ff" prot="public" virt="non-virtual">gr::doa::unwrap_ff</basecompoundref>
+    <includes refid="unwrap__ff__impl_8h" local="no">unwrap_ff_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1unwrap__ff__impl_1a0f96e99be63856ecc443bef7e0662c54" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::doa::unwrap_ff_impl::d_vector_size</definition>
+        <argsstring></argsstring>
+        <name>d_vector_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="32" column="14" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1unwrap__ff__impl_1afc56976e95bdcb78a541913c89e471ff" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::unwrap_ff_impl::d_min</definition>
+        <argsstring></argsstring>
+        <name>d_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="33" column="16" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1unwrap__ff__impl_1abcbd38bfe3f9c30668f17740139f3f3d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::unwrap_ff_impl::d_max</definition>
+        <argsstring></argsstring>
+        <name>d_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="34" column="16" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1unwrap__ff__impl_1aed78c07068bc345f64250a8665423778" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::unwrap_ff_impl::unwrap</definition>
+        <argsstring>(const float *in, float *out)</argsstring>
+        <name>unwrap</name>
+        <param>
+          <type>const float *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="35" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1unwrap__ff__impl_1a14f6e2624b497529e1cda5f99bd3a0f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::unwrap_ff_impl::unwrap_ff_impl</definition>
+        <argsstring>(int vector_size, float min, float max)</argsstring>
+        <name>unwrap_ff_impl</name>
+        <param>
+          <type>int</type>
+          <declname>vector_size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="38" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1unwrap__ff__impl_1a14796452a34e284520318cf98af61a34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::unwrap_ff_impl::~unwrap_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~unwrap_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="39" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1unwrap__ff__impl_1aa1a4d9decbcf089d1582cf448263f161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::unwrap_ff_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="42" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::doa::unwrap_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1unwrap__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::unwrap_ff</label>
+        <link refid="classgr_1_1doa_1_1unwrap__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::doa::unwrap_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1unwrap__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::unwrap_ff</label>
+        <link refid="classgr_1_1doa_1_1unwrap__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/unwrap_ff_impl.h" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1unwrap__ff__impl_1abcbd38bfe3f9c30668f17740139f3f3d" prot="private" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>d_max</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff__impl_1afc56976e95bdcb78a541913c89e471ff" prot="private" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>d_min</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff__impl_1a0f96e99be63856ecc443bef7e0662c54" prot="private" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>d_vector_size</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff_1a372a1158768b91dd19271464574adb54" prot="public" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff_1a9543a376baaeca67a358e54299b26177" prot="public" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff__impl_1aed78c07068bc345f64250a8665423778" prot="private" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>unwrap</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff__impl_1a14f6e2624b497529e1cda5f99bd3a0f2" prot="public" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>unwrap_ff_impl</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff__impl_1aa1a4d9decbcf089d1582cf448263f161" prot="public" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1unwrap__ff__impl_1a14796452a34e284520318cf98af61a34" prot="public" virt="non-virtual"><scope>gr::doa::unwrap_ff_impl</scope><name>~unwrap_ff_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

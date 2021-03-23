@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="mode__ii_8h" kind="file" language="C++">
+    <compoundname>mode_ii.h</compoundname>
+    <includes refid="api_8h" local="no">doa/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="mode__ii__impl_8h" local="no">mode_ii_impl.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="3">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="2">
+        <label>doa/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mode_ii.h</label>
+        <link refid="mode__ii_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>mode_ii_impl.h</label>
+        <link refid="mode__ii__impl_8h"/>
+      </node>
+      <node id="1">
+        <label>mode_ii.h</label>
+        <link refid="mode__ii_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1doa_1_1mode__ii" prot="public">gr::doa::mode_ii</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1doa">gr::doa</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/mode_ii.h"/>
+  </compounddef>
+</doxygen>

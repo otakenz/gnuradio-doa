@@ -38,7 +38,7 @@ parameters:
 -   id: circleColor
     label: Circle Color
     dtype: enum
-    default: 'red'
+    default: 'black'
     options: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
     option_labels: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal']
     hide: 'part'
@@ -58,6 +58,9 @@ inputs:
 -   domain: stream
     dtype: float
     optional: true
+# -   domain: stream
+#     dtype: float
+#     optional: true
 
 documentation: |-
   This block takes angle in egrees as input and display it on a Semicircle.

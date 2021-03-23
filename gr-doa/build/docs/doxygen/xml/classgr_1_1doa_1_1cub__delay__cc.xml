@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1cub__delay__cc" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::doa::cub_delay_cc</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1doa_1_1cub__delay__cc__impl" prot="public" virt="non-virtual">gr::doa::cub_delay_cc_impl</derivedcompoundref>
+    <includes refid="cub__delay__cc_8h" local="no">cub_delay_cc.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1doa_1_1cub__delay__cc_1ad0015653f206ccd719158cd8c89fcac1" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1doa_1_1cub__delay__cc" kindref="compound">cub_delay_cc</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;cub_delay_cc&gt; gr::doa::cub_delay_cc::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/cub_delay_cc.h" line="39" column="33" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/cub_delay_cc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1cub__delay__cc_1a08dce1ef2063014b9f254a58b7a4c7f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1doa_1_1cub__delay__cc_1ad0015653f206ccd719158cd8c89fcac1" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::doa::cub_delay_cc::make</definition>
+        <argsstring>(int samp_rate, float delay)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1doa_1_1cub__delay__cc" kindref="compound">doa::cub_delay_cc</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1doa_1_1cub__delay__cc" kindref="compound">doa::cub_delay_cc</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1doa_1_1cub__delay__cc_1a08dce1ef2063014b9f254a58b7a4c7f8" kindref="member">doa::cub_delay_cc::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/cub_delay_cc.h" line="49" column="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1cub__delay__cc_1a69e3e1cf0e430b74d1a95cdf10240e9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::doa::cub_delay_cc::dly</definition>
+        <argsstring>() const =0</argsstring>
+        <name>dly</name>
+        <reimplementedby refid="classgr_1_1doa_1_1cub__delay__cc__impl_1a0735f23b676547f8d46cfb307bf2be02">dly</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/cub_delay_cc.h" line="51" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1cub__delay__cc_1a4d5cf70097429d9fc0eea800224e8cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::doa::cub_delay_cc::set_dly</definition>
+        <argsstring>(float new_delay)=0</argsstring>
+        <name>set_dly</name>
+        <reimplementedby refid="classgr_1_1doa_1_1cub__delay__cc__impl_1aa6b96ea10d5a813e8c73fd884289c0f4">set_dly</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>new_delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/cub_delay_cc.h" line="52" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>gr::doa::cub_delay_cc_impl</label>
+        <link refid="classgr_1_1doa_1_1cub__delay__cc__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::doa::cub_delay_cc</label>
+        <link refid="classgr_1_1doa_1_1cub__delay__cc"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::doa::cub_delay_cc</label>
+        <link refid="classgr_1_1doa_1_1cub__delay__cc"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/cub_delay_cc.h" line="37" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/cub_delay_cc.h" bodystart="36" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1cub__delay__cc_1a69e3e1cf0e430b74d1a95cdf10240e9f" prot="public" virt="pure-virtual"><scope>gr::doa::cub_delay_cc</scope><name>dly</name></member>
+      <member refid="classgr_1_1doa_1_1cub__delay__cc_1a08dce1ef2063014b9f254a58b7a4c7f8" prot="public" virt="non-virtual"><scope>gr::doa::cub_delay_cc</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1cub__delay__cc_1a4d5cf70097429d9fc0eea800224e8cf2" prot="public" virt="pure-virtual"><scope>gr::doa::cub_delay_cc</scope><name>set_dly</name></member>
+      <member refid="classgr_1_1doa_1_1cub__delay__cc_1ad0015653f206ccd719158cd8c89fcac1" prot="public" virt="non-virtual"><scope>gr::doa::cub_delay_cc</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1hold__ii" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::doa::hold_ii</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1doa_1_1hold__ii__impl" prot="public" virt="non-virtual">gr::doa::hold_ii_impl</derivedcompoundref>
+    <includes refid="hold__ii_8h" local="no">hold_ii.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1doa_1_1hold__ii_1a9e8628d295cb49bcd101e94ef7a2f9cc" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1doa_1_1hold__ii" kindref="compound">hold_ii</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;hold_ii&gt; gr::doa::hold_ii::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/hold_ii.h" line="39" column="33" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/hold_ii.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__ii_1ae3e3ec5cb5d14a9e5c053ea475bf81d6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1doa_1_1hold__ii_1a9e8628d295cb49bcd101e94ef7a2f9cc" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::doa::hold_ii::make</definition>
+        <argsstring>(bool hold)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>hold</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1doa_1_1hold__ii" kindref="compound">doa::hold_ii</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1doa_1_1hold__ii" kindref="compound">doa::hold_ii</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1doa_1_1hold__ii_1ae3e3ec5cb5d14a9e5c053ea475bf81d6" kindref="member">doa::hold_ii::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/hold_ii.h" line="49" column="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__ii_1a9046cabe2417173a6d537eb64a89314a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::doa::hold_ii::set_hold</definition>
+        <argsstring>(bool new_hold)=0</argsstring>
+        <name>set_hold</name>
+        <reimplementedby refid="classgr_1_1doa_1_1hold__ii__impl_1ad35d3f00608b10580a85aedbf9db9fe3">set_hold</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>new_hold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/hold_ii.h" line="50" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1hold__ii_1a6bd1f9061542594651b52328f908b831" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::doa::hold_ii::get_hold</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_hold</name>
+        <reimplementedby refid="classgr_1_1doa_1_1hold__ii__impl_1adb375a299b14c9b407f253daa03ee4f7">get_hold</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/hold_ii.h" line="51" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::doa::hold_ii</label>
+        <link refid="classgr_1_1doa_1_1hold__ii"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sync_block</label>
+      </node>
+      <node id="3">
+        <label>gr::doa::hold_ii_impl</label>
+        <link refid="classgr_1_1doa_1_1hold__ii__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::doa::hold_ii</label>
+        <link refid="classgr_1_1doa_1_1hold__ii"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/hold_ii.h" line="37" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/hold_ii.h" bodystart="36" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1hold__ii_1a6bd1f9061542594651b52328f908b831" prot="public" virt="pure-virtual"><scope>gr::doa::hold_ii</scope><name>get_hold</name></member>
+      <member refid="classgr_1_1doa_1_1hold__ii_1ae3e3ec5cb5d14a9e5c053ea475bf81d6" prot="public" virt="non-virtual"><scope>gr::doa::hold_ii</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1hold__ii_1a9046cabe2417173a6d537eb64a89314a" prot="public" virt="pure-virtual"><scope>gr::doa::hold_ii</scope><name>set_hold</name></member>
+      <member refid="classgr_1_1doa_1_1hold__ii_1a9e8628d295cb49bcd101e94ef7a2f9cc" prot="public" virt="non-virtual"><scope>gr::doa::hold_ii</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

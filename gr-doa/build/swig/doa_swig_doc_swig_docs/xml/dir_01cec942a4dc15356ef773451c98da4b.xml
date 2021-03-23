@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_01cec942a4dc15356ef773451c98da4b" kind="dir">
+    <compoundname>/home/jhunhong/gnuradio-doa/gr-doa/include/doa</compoundname>
+    <innerfile refid="add__const__ff_8h">add_const_ff.h</innerfile>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="capon__ccf_8h">capon_ccf.h</innerfile>
+    <innerfile refid="cub__delay__cc_8h">cub_delay_cc.h</innerfile>
+    <innerfile refid="cumulative__ff_8h">cumulative_ff.h</innerfile>
+    <innerfile refid="delay_8h">delay.h</innerfile>
+    <innerfile refid="full__capon3__ccf_8h">full_capon3_ccf.h</innerfile>
+    <innerfile refid="full__capon__ccf_8h">full_capon_ccf.h</innerfile>
+    <innerfile refid="hold__ff_8h">hold_ff.h</innerfile>
+    <innerfile refid="hold__ii_8h">hold_ii.h</innerfile>
+    <innerfile refid="hold__state__ff_8h">hold_state_ff.h</innerfile>
+    <innerfile refid="lin__delay__cc_8h">lin_delay_cc.h</innerfile>
+    <innerfile refid="linearslope__ff_8h">linearslope_ff.h</innerfile>
+    <innerfile refid="message__sink__f_8h">message_sink_f.h</innerfile>
+    <innerfile refid="message__sink__i_8h">message_sink_i.h</innerfile>
+    <innerfile refid="mode__ii_8h">mode_ii.h</innerfile>
+    <innerfile refid="multiply__exp__cc_8h">multiply_exp_cc.h</innerfile>
+    <innerfile refid="peak__estimator__cif_8h">peak_estimator_cif.h</innerfile>
+    <innerfile refid="phase2doa__ff_8h">phase2doa_ff.h</innerfile>
+    <innerfile refid="pi2pi__ff_8h">pi2pi_ff.h</innerfile>
+    <innerfile refid="sample__offset__cci_8h">sample_offset_cci.h</innerfile>
+    <innerfile refid="unwrap__ff_8h">unwrap_ff.h</innerfile>
+    <innerfile refid="variance__ff_8h">variance_ff.h</innerfile>
+    <innerfile refid="zero__pad__cc_8h">zero_pad_cc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/include/doa/"/>
+  </compounddef>
+</doxygen>

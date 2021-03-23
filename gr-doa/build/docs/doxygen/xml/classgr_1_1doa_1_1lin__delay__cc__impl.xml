@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1lin__delay__cc__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::lin_delay_cc_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1lin__delay__cc" prot="public" virt="non-virtual">gr::doa::lin_delay_cc</basecompoundref>
+    <includes refid="lin__delay__cc__impl_8h" local="no">lin_delay_cc_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1lin__delay__cc__impl_1abf4be3d67c3f696cea0089452d493e9a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::doa::lin_delay_cc_impl::d_samp_rate</definition>
+        <argsstring></argsstring>
+        <name>d_samp_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="34" column="14" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a8224800705e6dee2afe00a98b518af6b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::lin_delay_cc_impl::d_delay</definition>
+        <argsstring></argsstring>
+        <name>d_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="35" column="16" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a5cac150d24dbb1a16dbc852c151aec73" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; gr_complex &gt;</type>
+        <definition>std::queue&lt;gr_complex&gt; gr::doa::lin_delay_cc_impl::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="36" column="21" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a02414255730491eaf62c943455969c43" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; gr_complex &gt;</type>
+        <definition>std::queue&lt;gr_complex&gt; gr::doa::lin_delay_cc_impl::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="37" column="21" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1lin__delay__cc__impl_1ace694e3171d2fa414eb0dcb9b2dbf729" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::doa::lin_delay_cc_impl::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="38" column="17" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a4785d8ea15ec4637477c468cdb3ce7e4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::doa::lin_delay_cc_impl::curr_offset</definition>
+        <argsstring></argsstring>
+        <name>curr_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="38" column="24" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1doa_1_1lin__delay__cc__impl_1af10d544e95715710ec882ad87111b746" prot="private" static="no" mutable="no">
+        <type>gr::thread::mutex</type>
+        <definition>gr::thread::mutex gr::doa::lin_delay_cc_impl::d_mutex_delay</definition>
+        <argsstring></argsstring>
+        <name>d_mutex_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="39" column="28" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a53eed456fc0627ae21a82e7c8d0d69eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>gr_complex</type>
+        <definition>gr_complex gr::doa::lin_delay_cc_impl::interpolate</definition>
+        <argsstring>(const gr_complex &amp;p1, const gr_complex &amp;p2, float ratio)</argsstring>
+        <name>interpolate</name>
+        <param>
+          <type>const gr_complex &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const gr_complex &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="33" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a701fe0f6effb44f0d954581defb62662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::lin_delay_cc_impl::lin_delay_cc_impl</definition>
+        <argsstring>(int samp_rate, float delay)</argsstring>
+        <name>lin_delay_cc_impl</name>
+        <param>
+          <type>int</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="42" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a371f7e533ec66b21932f2ba1bb23daba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::lin_delay_cc_impl::~lin_delay_cc_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~lin_delay_cc_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="43" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1lin__delay__cc__impl_1a109b87b6b15314bb8071a0296cb62681" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::doa::lin_delay_cc_impl::set_dly</definition>
+        <argsstring>(float new_delay)</argsstring>
+        <name>set_dly</name>
+        <reimplements refid="classgr_1_1doa_1_1lin__delay__cc_1a9ee7672116e17f0d7f4feac96919ee12">set_dly</reimplements>
+        <param>
+          <type>float</type>
+          <declname>new_delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="44" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1lin__delay__cc__impl_1ae95015f2a927e6f5e6e33b1317901620" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>float gr::doa::lin_delay_cc_impl::dly</definition>
+        <argsstring>() const</argsstring>
+        <name>dly</name>
+        <reimplements refid="classgr_1_1doa_1_1lin__delay__cc_1a9f24b4860e03a4b91dbcd08ee7660801">dly</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="45" column="13" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1lin__delay__cc__impl_1ad7f26feba554c56d8ba5e6f5a02452eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::lin_delay_cc_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="48" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::lin_delay_cc</label>
+        <link refid="classgr_1_1doa_1_1lin__delay__cc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::doa::lin_delay_cc_impl</label>
+        <link refid="classgr_1_1doa_1_1lin__delay__cc__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::lin_delay_cc</label>
+        <link refid="classgr_1_1doa_1_1lin__delay__cc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::doa::lin_delay_cc_impl</label>
+        <link refid="classgr_1_1doa_1_1lin__delay__cc__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" line="31" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/lin_delay_cc_impl.h" bodystart="30" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a5cac150d24dbb1a16dbc852c151aec73" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>buffer</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a4785d8ea15ec4637477c468cdb3ce7e4" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>curr_offset</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a8224800705e6dee2afe00a98b518af6b" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>d_delay</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1af10d544e95715710ec882ad87111b746" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>d_mutex_delay</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1abf4be3d67c3f696cea0089452d493e9a" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>d_samp_rate</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1ae95015f2a927e6f5e6e33b1317901620" prot="public" virt="virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>dly</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a53eed456fc0627ae21a82e7c8d0d69eb" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>interpolate</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a701fe0f6effb44f0d954581defb62662" prot="public" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>lin_delay_cc_impl</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc_1ab5cc90a32063493ebc5945709cf8fa8e" prot="public" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1ace694e3171d2fa414eb0dcb9b2dbf729" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>offset</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a02414255730491eaf62c943455969c43" prot="private" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>points</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a109b87b6b15314bb8071a0296cb62681" prot="public" virt="virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>set_dly</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc_1ab202a1b8f17fcf70e4cd58718c55397a" prot="public" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1ad7f26feba554c56d8ba5e6f5a02452eb" prot="public" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1lin__delay__cc__impl_1a371f7e533ec66b21932f2ba1bb23daba" prot="public" virt="non-virtual"><scope>gr::doa::lin_delay_cc_impl</scope><name>~lin_delay_cc_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

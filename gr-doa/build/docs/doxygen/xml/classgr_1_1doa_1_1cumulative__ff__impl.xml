@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1cumulative__ff__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::cumulative_ff_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1cumulative__ff" prot="public" virt="non-virtual">gr::doa::cumulative_ff</basecompoundref>
+    <includes refid="cumulative__ff__impl_8h" local="no">cumulative_ff_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1doa_1_1cumulative__ff__impl_1a8bdbfe2225e6d6a6cf3c0d7b2c7b28d3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::doa::cumulative_ff_impl::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" line="32" column="13" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1cumulative__ff__impl_1a2721cc2b248e05325c6314ed25e22bc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::doa::cumulative_ff_impl::reset</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" line="33" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1cumulative__ff__impl_1ad9dbda3647344756b1248ae0788918d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::cumulative_ff_impl::cumulative_ff_impl</definition>
+        <argsstring>(float start)</argsstring>
+        <name>cumulative_ff_impl</name>
+        <param>
+          <type>float</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" line="36" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1cumulative__ff__impl_1a27a684f1c812e501f44942ca7dfecb73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::cumulative_ff_impl::~cumulative_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~cumulative_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" line="37" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1cumulative__ff__impl_1a5da92a83f0533690a1ab0906a6b49605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::cumulative_ff_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" line="40" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::doa::cumulative_ff</label>
+        <link refid="classgr_1_1doa_1_1cumulative__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::doa::cumulative_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1cumulative__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::doa::cumulative_ff</label>
+        <link refid="classgr_1_1doa_1_1cumulative__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::doa::cumulative_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1cumulative__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/cumulative_ff_impl.h" bodystart="29" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1cumulative__ff__impl_1ad9dbda3647344756b1248ae0788918d1" prot="public" virt="non-virtual"><scope>gr::doa::cumulative_ff_impl</scope><name>cumulative_ff_impl</name></member>
+      <member refid="classgr_1_1doa_1_1cumulative__ff_1a34e58bd1c4ebcac2052b0325841c27cd" prot="public" virt="non-virtual"><scope>gr::doa::cumulative_ff_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1cumulative__ff__impl_1a2721cc2b248e05325c6314ed25e22bc3" prot="private" virt="non-virtual"><scope>gr::doa::cumulative_ff_impl</scope><name>reset</name></member>
+      <member refid="classgr_1_1doa_1_1cumulative__ff_1ad151a13d3cb6adec45e1c3f4b2f90073" prot="public" virt="non-virtual"><scope>gr::doa::cumulative_ff_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1cumulative__ff__impl_1a8bdbfe2225e6d6a6cf3c0d7b2c7b28d3" prot="private" virt="non-virtual"><scope>gr::doa::cumulative_ff_impl</scope><name>sum</name></member>
+      <member refid="classgr_1_1doa_1_1cumulative__ff__impl_1a5da92a83f0533690a1ab0906a6b49605" prot="public" virt="non-virtual"><scope>gr::doa::cumulative_ff_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1cumulative__ff__impl_1a27a684f1c812e501f44942ca7dfecb73" prot="public" virt="non-virtual"><scope>gr::doa::cumulative_ff_impl</scope><name>~cumulative_ff_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

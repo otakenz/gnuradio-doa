@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1doa_1_1pi2pi__ff__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::doa::pi2pi_ff_impl</compoundname>
+    <basecompoundref refid="classgr_1_1doa_1_1pi2pi__ff" prot="public" virt="non-virtual">gr::doa::pi2pi_ff</basecompoundref>
+    <includes refid="pi2pi__ff__impl_8h" local="no">pi2pi_ff_impl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1doa_1_1pi2pi__ff__impl_1a5437cfa9bf296ea3188c298b55bd633a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::pi2pi_ff_impl::pi2pi_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>pi2pi_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/pi2pi_ff_impl.h" line="35" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1pi2pi__ff__impl_1a6bd44a7f8d67802d740772715a42d94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::doa::pi2pi_ff_impl::~pi2pi_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~pi2pi_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/pi2pi_ff_impl.h" line="36" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1doa_1_1pi2pi__ff__impl_1a2f9790c59656f91a7aa9d15d2bd7197a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::doa::pi2pi_ff_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/pi2pi_ff_impl.h" line="39" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::doa::pi2pi_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1pi2pi__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::pi2pi_ff</label>
+        <link refid="classgr_1_1doa_1_1pi2pi__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::doa::pi2pi_ff_impl</label>
+        <link refid="classgr_1_1doa_1_1pi2pi__ff__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::doa::pi2pi_ff</label>
+        <link refid="classgr_1_1doa_1_1pi2pi__ff"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jhunhong/gnuradio-doa/gr-doa/lib/pi2pi_ff_impl.h" line="30" column="1" bodyfile="/home/jhunhong/gnuradio-doa/gr-doa/lib/pi2pi_ff_impl.h" bodystart="29" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classgr_1_1doa_1_1pi2pi__ff_1a97aaf6ec2b81a94693b02bff697c1d20" prot="public" virt="non-virtual"><scope>gr::doa::pi2pi_ff_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1doa_1_1pi2pi__ff__impl_1a5437cfa9bf296ea3188c298b55bd633a" prot="public" virt="non-virtual"><scope>gr::doa::pi2pi_ff_impl</scope><name>pi2pi_ff_impl</name></member>
+      <member refid="classgr_1_1doa_1_1pi2pi__ff_1a5ee8e3991c924d16c45aef61586d7adf" prot="public" virt="non-virtual"><scope>gr::doa::pi2pi_ff_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1doa_1_1pi2pi__ff__impl_1a2f9790c59656f91a7aa9d15d2bd7197a" prot="public" virt="non-virtual"><scope>gr::doa::pi2pi_ff_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1doa_1_1pi2pi__ff__impl_1a6bd44a7f8d67802d740772715a42d94b" prot="public" virt="non-virtual"><scope>gr::doa::pi2pi_ff_impl</scope><name>~pi2pi_ff_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
