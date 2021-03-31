@@ -409,9 +409,9 @@ lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: lib/CMakeFiles/gnuradio-doa.dir
 lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: lib/CMakeFiles/gnuradio-doa.dir/phase2doa_ff_impl.cc.o
 lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: lib/CMakeFiles/gnuradio-doa.dir/hold_state_ff_impl.cc.o
 lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: lib/CMakeFiles/gnuradio-doa.dir/build.make
-lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /home/jhunhong/gnuradio/lib/libgnuradio-fft.so.v3.8.2.0-80-g40c04cae
-lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /home/jhunhong/gnuradio/lib/libgnuradio-runtime.so.v3.8.2.0-80-g40c04cae
-lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /home/jhunhong/gnuradio/lib/libgnuradio-pmt.so.v3.8.2.0-80-g40c04cae
+lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /home/jhunhong/gnuradio/lib/libgnuradio-fft.so.v3.8.2.0-71-g2d3d43fd
+lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /home/jhunhong/gnuradio/lib/libgnuradio-runtime.so.v3.8.2.0-71-g2d3d43fd
+lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /home/jhunhong/gnuradio/lib/libgnuradio-pmt.so.v3.8.2.0-71-g2d3d43fd
 lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
 lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
 lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0

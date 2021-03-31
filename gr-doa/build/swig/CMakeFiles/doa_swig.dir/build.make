@@ -81,9 +81,9 @@ swig/_doa_swig.so: swig/CMakeFiles/doa_swig.dir/CMakeFiles/doa_swig.dir/doa_swig
 swig/_doa_swig.so: swig/CMakeFiles/doa_swig.dir/build.make
 swig/_doa_swig.so: lib/libgnuradio-doa.so.v1.0-compat-xxx-xunknown
 swig/_doa_swig.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-swig/_doa_swig.so: /home/jhunhong/gnuradio/lib/libgnuradio-fft.so.v3.8.2.0-80-g40c04cae
-swig/_doa_swig.so: /home/jhunhong/gnuradio/lib/libgnuradio-runtime.so.v3.8.2.0-80-g40c04cae
-swig/_doa_swig.so: /home/jhunhong/gnuradio/lib/libgnuradio-pmt.so.v3.8.2.0-80-g40c04cae
+swig/_doa_swig.so: /home/jhunhong/gnuradio/lib/libgnuradio-fft.so.v3.8.2.0-71-g2d3d43fd
+swig/_doa_swig.so: /home/jhunhong/gnuradio/lib/libgnuradio-runtime.so.v3.8.2.0-71-g2d3d43fd
+swig/_doa_swig.so: /home/jhunhong/gnuradio/lib/libgnuradio-pmt.so.v3.8.2.0-71-g2d3d43fd
 swig/_doa_swig.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
 swig/_doa_swig.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
 swig/_doa_swig.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0

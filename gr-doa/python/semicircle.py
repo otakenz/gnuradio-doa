@@ -190,14 +190,14 @@ class GrSemiCircle(gr.sync_block, LabeledSemiCircle):
         # self.doa_value = int(input_items[0][0])
         # self.peak_detected = input_items[1][0]
 
-        if (len(self.doa_array) >= 20):
+        self.next_angle = numpy.mean(self.doa_array)
+        if (len(self.doa_array) >= 50):
             # pack it into an array
-            self.next_angle = numpy.mean(self.doa_array)
 
             # getting standard deviation of input arrays
             self.std = sqrt(numpy.mean(abs(self.doa_array[-1] - self.next_angle)**2))
 
-            if (self.std <= 0.1): # make it larger than 0.1?
+            if (self.std <= 0.02): # make it larger than 0.1?
                 # print(self.doa_array)
                 # print(self.std)
                 # print(input_items[1])
