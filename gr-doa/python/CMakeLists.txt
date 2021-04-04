@@ -34,7 +34,9 @@ GR_PYTHON_INSTALL(
     timestamp_ccf.py
     arrow_f.py
     compass.py
-    semicircle.py DESTINATION ${GR_PYTHON_DIR}/doa
+    semicircle.py
+    OOKDecoder.py
+    DESTINATION ${GR_PYTHON_DIR}/doa
 )
 
 ########################################################################
@@ -65,3 +67,4 @@ GR_ADD_TEST(qa_pi2pi_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_pi2p
 GR_ADD_TEST(qa_phase2doa_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_phase2doa_ff.py)
 GR_ADD_TEST(qa_compass ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_compass.py)
 GR_ADD_TEST(qa_semicircle ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_semicircle.py)
+GR_ADD_TEST(qa_OOKDecoder ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_OOKDecoder.py)

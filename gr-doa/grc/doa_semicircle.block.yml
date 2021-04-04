@@ -48,7 +48,7 @@ parameters:
     default: 'False'
     options: ['False', 'True']
     option_labels: ['No', 'Yes']
-    hide: 'part'
+    # hide: 'part'
 -   id: gui_hint
     label: GUI Hint
     dtype: gui_hint
@@ -58,9 +58,9 @@ inputs:
 -   domain: stream
     dtype: float
     optional: true
-# -   domain: stream
-#     dtype: float
-#     optional: true
+-   domain: message
+    id: msg
+    optional: true
 
 documentation: |-
   This block takes angle in egrees as input and display it on a Semicircle.

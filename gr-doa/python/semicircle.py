@@ -25,6 +25,7 @@ import numpy
 from gnuradio import gr
 import time
 from math import sqrt
+import pmt
 
 from PyQt5 import Qt, QtGui
 from PyQt5.QtCore import Qt as Qtc
@@ -34,6 +35,8 @@ from PyQt5.QtGui import QPainter, QPalette, QFont, QFontMetricsF,  QPen, QColor,
 
 
 class LabeledSemiCircle(QFrame):
+
+    # msgChanged = pyqtSignal(str)
     def __init__(self, min_size, update_time, setDebug=False, backgroundColor='default'):
         QFrame.__init__(self)
         self.sectorControl = SemiCircle(min_size, update_time, setDebug, backgroundColor)
@@ -41,7 +44,18 @@ class LabeledSemiCircle(QFrame):
         self.layout = QVBoxLayout()
         self.layout.addWidget(self.sectorControl)
         self.layout.setAlignment(Qtc.AlignCenter | Qtc.AlignVCenter)
+
+        # self.message2 = "hey"
+        # self._message = "hey"
+
+        # self.msg_control = QLabel(self.message2, self)
+        # self.msg_control.setAlignment(Qtc.AlignCenter)
+        # self.layout.addWidget(self.msg_control)
+
         self.setLayout(self.layout)
+
+        # self._msg = ""
+        self.debug = setDebug
 
         self.show()
 
@@ -51,9 +65,25 @@ class LabeledSemiCircle(QFrame):
     def setColors(self, backgroundColor='default', circleColor='black', sectorColor='blue'):
         self.sectorControl.setColors(backgroundColor, circleColor, sectorColor)
 
+    # def msg(self):
+    #     return self._msg
+
+    def recv_msg(self, msg):
+        self.sectorControl.recv_msg(msg)
+    #     if self.debug:
+    #         # print("Message received: {}".format(msg))
+    #         print("Message received: " + msg)
+
+    #     self._message = msg
+    #     self.msgChanged.emit(msg)
+    #     self.update()
+
+    # msg = pyqtProperty(str, recv_msg, msg)
+
 
 class SemiCircle(QWidget):
     angleChanged = pyqtSignal(float)
+    msgChanged = pyqtSignal(str)
 
     def __init__(self, min_size, update_time, setDebug=False, backgroundColor='default'):
         QWidget.__init__(self, None)
@@ -75,6 +105,9 @@ class SemiCircle(QWidget):
 
         self.doa_exist = False
 
+        self._message = "hey"
+        # self.message2 = "hey"
+
     def setColors(self, backgroundColor='default', circleColor='black', sectorColor='blue'):
         self.backgroundColor = backgroundColor
         self.circleColor = circleColor
@@ -86,22 +119,27 @@ class SemiCircle(QWidget):
         painter.begin(self)
         painter.setRenderHint(QPainter.Antialiasing)
 
-#         if (self.backgroundColor == 'default'):
-#             painter.fillRect(event.rect(), self.palette().brush(QPalette.Window))
-#         else:
-#             size = self.size()
-#             center_x = size.width()/2
-#             diameter = size.height()
-#             rect = QRect(center_x-diameter/2, 0, diameter, diameter)
-#             brush = QBrush(QColor(self.backgroundColor), Qtc.SolidPattern)
-
-#             painter.setBrush(brush)
-#             painter.setPen(QPen(QColor(self.circleColor), 2))
-#             painter.setRenderHint(QPainter.Antialiasing)
-#             painter.drawEllipse(center_x-diameter/2+1, 1, diameter-4, diameter-4)
+        # label = QLabel()
 
         self.drawSector(painter)
+        # self.drawLabel(painter)
         painter.end()
+
+    # def drawLabel(self, painter):
+    #     # print(self._message)
+    #     # label.setText(self._message)
+    #     # label.setAlignment(Qtc.AlignRight)
+    #     painter.save()
+
+    #     painter.translate(self.width()/2, 50)
+
+    #     painter.setPen(QPen(QColor(self.circleColor)))
+
+    #     msg = self._message
+
+    #     painter.drawText(0, 0, msg)
+
+    #     painter.restore()
 
     def drawSector(self, painter):
         painter.save()
@@ -112,6 +150,7 @@ class SemiCircle(QWidget):
         painter.setPen(QPen(QColor(self.circleColor)))
 
         angle = int(round(self._angle))
+        msg = self._message
 
         height = 600
         width = 600
@@ -133,12 +172,16 @@ class SemiCircle(QWidget):
         painter.drawLine(width/2, 150, width/2-10, 130)
         painter.drawLine(width/2-10, 130, width/2+10, 130)
 
+        # painter.drawText(250, -250, msg)
+
         if angle > 0 and self.doa_exist:
             painter.setBrush(QBrush(QColor(self.sectorColor), Qtc.SolidPattern))
-            painter.drawPie(0-width/2, 0-height/2, width, height, 90 * 16, 90 * 16)
+            painter.drawPie(0-width/2, 0-height/2, width, height, 0 * 16, 90 * 16)
+            painter.drawText(250, -250, msg)
         elif angle < 0 and self.doa_exist:
             painter.setBrush(QBrush(QColor(self.sectorColor), Qtc.SolidPattern))
-            painter.drawPie(0-width/2, 0-height/2, width, height, 0 * 16, 90 * 16)
+            painter.drawPie(0-width/2, 0-height/2, width, height, 90 * 16, 90 * 16)
+            painter.drawText(-250, -250, msg)
         # else:
         #     painter.setBrush(QBrush(QColor(0,0,0), Qtc.SolidPattern))
 
@@ -150,30 +193,48 @@ class SemiCircle(QWidget):
     def change_angle(self, angle, doa_exist):
         if angle != self._angle:
             if self.debug:
-                print(("DoA Angle: " + str(angle)))
-            # if (angle < 0.0):
-            #     angle = 0
+                print("DoA Angle: " + str(angle))
+                # print("Message received {}".format(msg))
 
+            if doa_exist:
+                # self.recv_msg(msg)
+                self.doa_exist = True
+                self._angle = angle
+                self.angleChanged.emit(angle)
+            else:
+                self.doa_exist = False
 
-        if doa_exist:
-            self.doa_exist = True
-            self._angle = angle
-            self.angleChanged.emit(angle)
-        else:
-            self.doa_exist = False
+            self.update()
 
+    def msg(self):
+        return self._msg
+
+    def recv_msg(self, msg):
+        if self.debug:
+            print("Message received: {}".format(msg))
+            # print("Message received: " + msg)
+
+        # self._message1 = msg1
+        # self._message2 = msg2
+        self._message = msg
+        self.msgChanged.emit(msg)
         self.update()
 
     angle = pyqtProperty(float, angle, change_angle)
+    msg = pyqtProperty(str, msg, recv_msg)
 
 
 class GrSemiCircle(gr.sync_block, LabeledSemiCircle):
     def __init__(self, min_size, update_time, setDebug=False, backgroundColor='default'):
         gr.sync_block.__init__(self, name="QTSemiCircle", in_sig=[numpy.float32], out_sig=[])
 
+        self.message = ""
+        self.message2 = ""
+
         LabeledSemiCircle.__init__(self, min_size, update_time, setDebug, backgroundColor)
 
         self.last = time.time()
+        # self.last2 = time.time()
         self.update_period = update_time
         self.next_angle = 0
         self.doa_array = []
@@ -181,9 +242,48 @@ class GrSemiCircle(gr.sync_block, LabeledSemiCircle):
         self.peak_detected = 0
         self.doa_value = 0
         self.std = 0
+        # self.recv_msg = []
+
+        self.message_port_register_in(pmt.intern("msg"))
+        self.set_msg_handler(pmt.intern("msg"), self.msgHandler)
+
+        # self.message_port_register_in(pmt.intern("msg2"))
+        # self.set_msg_handler(pmt.intern("msg2"), self.msgHandler2)
+
+    def msgHandler(self, msg):
+        message = pmt.symbol_to_string(msg)
+
+        try:
+            # self.setMessage(message)
+            # self.recv_msg.append(message)
+            if message != "":
+                self.message = message
+
+        except Exception as e:
+            print("Message Handler Error: {}".format(e))
+
+    # def msgHandler2(self, msg):
+    #     message = pmt.symbol_to_string(msg)
+
+    #     try:
+    #         # self.setMessage(message)
+    #         # self.recv_msg.append(message)
+    #         if message != "":
+    #             self.message2 = message
+
+    #     except Exception as e:
+    #         print("Message Handler Error: {}".format(e))
 
     def setColors(self, backgroundColor='default', circleColor='black', sectorColor='blue'):
         super().setColors(backgroundColor, circleColor, sectorColor)
+
+    # def setMessage(self, msg):
+    #     self.message = msg
+        # return self.message
+        # print('in setter {}'.format(self.message))
+
+    # def getMessage(self):
+    #     return self.message
 
     def work(self, input_items, output_items):
         self.doa_array.append(int(input_items[0][0]))
@@ -193,14 +293,10 @@ class GrSemiCircle(gr.sync_block, LabeledSemiCircle):
         self.next_angle = numpy.mean(self.doa_array)
         if (len(self.doa_array) >= 50):
             # pack it into an array
-
             # getting standard deviation of input arrays
             self.std = sqrt(numpy.mean(abs(self.doa_array[-1] - self.next_angle)**2))
 
-            if (self.std <= 0.02): # make it larger than 0.1?
-                # print(self.doa_array)
-                # print(self.std)
-                # print(input_items[1])
+            if (self.std <= 1): # make it larger than 0.1?
                 self.doa_exist = True
                 self.doa_array = []
 
@@ -209,12 +305,10 @@ class GrSemiCircle(gr.sync_block, LabeledSemiCircle):
 
             self.std = 0
 
-
         if (time.time() - self.last) > self.update_period:
             self.last = time.time()
-            # print(self.peak_detected)
-            # print(self.doa_value)
-            # print(self.peak_detected)
+            # print(self.getMessage())
+            super().recv_msg(self.message)
             super().change_angle(self.next_angle, self.doa_exist)
             self.doa_exist = False
 

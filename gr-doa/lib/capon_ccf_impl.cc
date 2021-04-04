@@ -66,39 +66,39 @@ namespace gr {
 
         /* std::cout << x1_avg << "\n"; */
 
-        if (std::abs(x1_avg) > 0.005) {
-          // subtract the average value from each element
-          for (int i=0; i<d_vector_size; ++i) { x1[i] -= x1_avg; }
-          for (int i=0; i<d_vector_size; ++i) { x2[i] -= x2_avg; }
-          // find conjugates of x1 and x2
-          std::vector<gr_complex> x1_c, x2_c;
-          x1_c.reserve(d_vector_size);
-          x2_c.reserve(d_vector_size);
-          for (int i=0; i<d_vector_size; ++i) { x1_c.push_back(conj(x1[i])); }
-          for (int i=0; i<d_vector_size; ++i) { x2_c.push_back(conj(x2[i])); }
-          // multiply vectors together
-          std::vector<gr_complex> c11, c12, c22;
-          c11.reserve(d_vector_size);
-          c12.reserve(d_vector_size);
-          c22.reserve(d_vector_size);
-          transform(x1.begin(), x1.end(), x1_c.begin(), back_inserter(c11), std::multiplies<gr_complex>());
-          transform(x1.begin(), x1.end(), x2_c.begin(), back_inserter(c12), std::multiplies<gr_complex>());
-          transform(x2.begin(), x2.end(), x2_c.begin(), back_inserter(c22), std::multiplies<gr_complex>());
-          // make covariance matrix
-          std::vector<std::vector<gr_complex> > covar(2, std::vector<gr_complex>(2, 0));
-          covar[0][0] = accumulate(c11.begin(), c11.end(), gr_complex(0,0)) / gr_complex(d_vector_size,0);
-          covar[0][1] = accumulate(c12.begin(), c12.end(), gr_complex(0,0)) / gr_complex(d_vector_size,0);
-          covar[1][1] = accumulate(c22.begin(), c22.end(), gr_complex(0,0)) / gr_complex(d_vector_size,0);
-          covar[1][0] = conj(covar[0][1]);
+        /* if (std::abs(x1_avg) > 0.0005) { */
+        // subtract the average value from each element
+        for (int i=0; i<d_vector_size; ++i) { x1[i] -= x1_avg; }
+        for (int i=0; i<d_vector_size; ++i) { x2[i] -= x2_avg; }
+        // find conjugates of x1 and x2
+        std::vector<gr_complex> x1_c, x2_c;
+        x1_c.reserve(d_vector_size);
+        x2_c.reserve(d_vector_size);
+        for (int i=0; i<d_vector_size; ++i) { x1_c.push_back(conj(x1[i])); }
+        for (int i=0; i<d_vector_size; ++i) { x2_c.push_back(conj(x2[i])); }
+        // multiply vectors together
+        std::vector<gr_complex> c11, c12, c22;
+        c11.reserve(d_vector_size);
+        c12.reserve(d_vector_size);
+        c22.reserve(d_vector_size);
+        transform(x1.begin(), x1.end(), x1_c.begin(), back_inserter(c11), std::multiplies<gr_complex>());
+        transform(x1.begin(), x1.end(), x2_c.begin(), back_inserter(c12), std::multiplies<gr_complex>());
+        transform(x2.begin(), x2.end(), x2_c.begin(), back_inserter(c22), std::multiplies<gr_complex>());
+        // make covariance matrix
+        std::vector<std::vector<gr_complex> > covar(2, std::vector<gr_complex>(2, 0));
+        covar[0][0] = accumulate(c11.begin(), c11.end(), gr_complex(0,0)) / gr_complex(d_vector_size,0);
+        covar[0][1] = accumulate(c12.begin(), c12.end(), gr_complex(0,0)) / gr_complex(d_vector_size,0);
+        covar[1][1] = accumulate(c22.begin(), c22.end(), gr_complex(0,0)) / gr_complex(d_vector_size,0);
+        covar[1][0] = conj(covar[0][1]);
 
-          // find eigenvalues
-          gr_complex lambda0 = (covar[0][0]+covar[1][1]+sqrt(pow((covar[0][0]+covar[1][1]),2)-gr_complex(4,0)*(covar[0][0]*covar[1][1]-covar[0][1]*covar[1][0])))/gr_complex(2,0);
-          gr_complex lambda1 = (covar[0][0]+covar[1][1]-sqrt(pow((covar[0][0]+covar[1][1]),2)-gr_complex(4,0)*(covar[0][0]*covar[1][1]-covar[0][1]*covar[1][0])))/gr_complex(2,0);
-          gr_complex max_lambda = (abs(lambda0) > abs(lambda1)) ? abs(lambda0) : abs(lambda1);
+        // find eigenvalues
+        gr_complex lambda0 = (covar[0][0]+covar[1][1]+sqrt(pow((covar[0][0]+covar[1][1]),2)-gr_complex(4,0)*(covar[0][0]*covar[1][1]-covar[0][1]*covar[1][0])))/gr_complex(2,0);
+        gr_complex lambda1 = (covar[0][0]+covar[1][1]-sqrt(pow((covar[0][0]+covar[1][1]),2)-gr_complex(4,0)*(covar[0][0]*covar[1][1]-covar[0][1]*covar[1][0])))/gr_complex(2,0);
+        gr_complex max_lambda = (abs(lambda0) > abs(lambda1)) ? abs(lambda0) : abs(lambda1);
 
           return std::arg((max_lambda - covar[0][0])/covar[0][1]);
-        }
-        else return 0;
+        /* } */
+        /* else return 0; */
     }
 
     int

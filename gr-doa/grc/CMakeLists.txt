@@ -43,5 +43,7 @@ install(FILES
     doa_phase2doa_ff.block.yml
     doa_hold_state_ff.block.yml
     doa_compass.block.yml
-    doa_semicircle.block.yml DESTINATION share/gnuradio/grc/blocks
+    doa_semicircle.block.yml
+    doa_OOKDecoder.block.yml
+    doa_test.block.yml DESTINATION share/gnuradio/grc/blocks
 )

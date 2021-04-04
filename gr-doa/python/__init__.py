@@ -29,6 +29,8 @@ from .timestamp_ccf import timestamp_ccf
 from .arrow_f import arrow_f
 from .compass import compass
 from .semicircle import GrSemiCircle
+from .OOKDecoder import OOKDecoder
+
 
 # import swig generated symbols into the doa namespace
 try:
